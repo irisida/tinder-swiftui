@@ -11,6 +11,12 @@
 		64A6FF1D2659539D001ADC70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF1C2659539D001ADC70 /* ContentView.swift */; };
 		64A6FF1F2659539E001ADC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A6FF1E2659539E001ADC70 /* Assets.xcassets */; };
 		64A6FF222659539E001ADC70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A6FF212659539E001ADC70 /* Preview Assets.xcassets */; };
+		64A6FF2B26595629001ADC70 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF2A26595629001ADC70 /* MainView.swift */; };
+		64A6FF2D2659584C001ADC70 /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF2C2659584C001ADC70 /* TabBarButtonView.swift */; };
+		64A6FF3026595D6A001ADC70 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF2F26595D6A001ADC70 /* AppStateManager.swift */; };
+		64A6FF3426596085001ADC70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF3326596085001ADC70 /* Extensions.swift */; };
+		64A6FF36265972BA001ADC70 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF35265972BA001ADC70 /* Colors.swift */; };
+		64A6FF38265973A4001ADC70 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF37265973A4001ADC70 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		64A6FF212659539E001ADC70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64A6FF232659539E001ADC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64A6FF29265954BB001ADC70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		64A6FF2A26595629001ADC70 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		64A6FF2C2659584C001ADC70 /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
+		64A6FF2F26595D6A001ADC70 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
+		64A6FF3326596085001ADC70 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		64A6FF35265972BA001ADC70 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		64A6FF37265973A4001ADC70 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +66,11 @@
 		64A6FF192659539D001ADC70 /* tinder-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				64A6FF3126595EAD001ADC70 /* App */,
+				64A6FF3226596079001ADC70 /* Common */,
+				64A6FF2E26595BED001ADC70 /* TabBar */,
+				64A6FF39265973AC001ADC70 /* Profile */,
 				64A6FF1A2659539D001ADC70 /* tinder_swiftuiApp.swift */,
-				64A6FF1C2659539D001ADC70 /* ContentView.swift */,
 				64A6FF1E2659539E001ADC70 /* Assets.xcassets */,
 				64A6FF232659539E001ADC70 /* Info.plist */,
 				64A6FF202659539E001ADC70 /* Preview Content */,
@@ -69,6 +84,41 @@
 				64A6FF212659539E001ADC70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64A6FF2E26595BED001ADC70 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF2A26595629001ADC70 /* MainView.swift */,
+				64A6FF2C2659584C001ADC70 /* TabBarButtonView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		64A6FF3126595EAD001ADC70 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF2F26595D6A001ADC70 /* AppStateManager.swift */,
+				64A6FF1C2659539D001ADC70 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		64A6FF3226596079001ADC70 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF3326596085001ADC70 /* Extensions.swift */,
+				64A6FF35265972BA001ADC70 /* Colors.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		64A6FF39265973AC001ADC70 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF37265973A4001ADC70 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A6FF38265973A4001ADC70 /* ProfileView.swift in Sources */,
+				64A6FF2D2659584C001ADC70 /* TabBarButtonView.swift in Sources */,
+				64A6FF3426596085001ADC70 /* Extensions.swift in Sources */,
 				64A6FF1D2659539D001ADC70 /* ContentView.swift in Sources */,
+				64A6FF36265972BA001ADC70 /* Colors.swift in Sources */,
+				64A6FF2B26595629001ADC70 /* MainView.swift in Sources */,
 				64A6FF1B2659539D001ADC70 /* tinder_swiftuiApp.swift in Sources */,
+				64A6FF3026595D6A001ADC70 /* AppStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
