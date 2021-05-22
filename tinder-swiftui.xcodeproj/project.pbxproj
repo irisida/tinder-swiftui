@@ -20,6 +20,7 @@
 		64A6FF1E2659539E001ADC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A6FF212659539E001ADC70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64A6FF232659539E001ADC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64A6FF29265954BB001ADC70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 		64A6FF0E2659539D001ADC70 = {
 			isa = PBXGroup;
 			children = (
+				64A6FF29265954BB001ADC70 /* README.md */,
 				64A6FF192659539D001ADC70 /* tinder-swiftui */,
 				64A6FF182659539D001ADC70 /* Products */,
 			);
