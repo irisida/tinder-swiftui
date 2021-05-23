@@ -27,7 +27,7 @@ struct MainView: View {
             return AnyView(view)
         
         case .profile:
-            let view = Text("Profile")
+            let view = ProfileView()
             return AnyView(view)
         }
     }
