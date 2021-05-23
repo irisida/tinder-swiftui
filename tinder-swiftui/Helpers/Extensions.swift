@@ -26,4 +26,18 @@ extension View {
     }
 }
 
+extension View {
+    func endEditing(_ force: Bool) {
+        UIApplication.shared.windows.forEach { $0.endEditing(force)}
+    }
+}
 
+// viewModifier for NavigationViews to remove the
+// out-the-box features for titles and navBar.
+struct HideNavigationView: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .navigationTitle("")
+            .navigationBarHidden(true)
+    }
+}

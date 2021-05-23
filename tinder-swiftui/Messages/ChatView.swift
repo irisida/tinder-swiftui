@@ -12,6 +12,8 @@ struct ChatView: View {
     
     @State private var typedMessage: String = ""
     
+    @State private var scrollProxy: ScrollViewProxy? = nil
+    
     private var person: Person
     
     init(person: Person) {
@@ -26,15 +28,22 @@ struct ChatView: View {
                 Spacer().frame(height: 64)
                 
                 ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false, content: {
-                    
-                    LazyVStack {
-                        ForEach(chatMgr.messages.indices, id: \.self) { index in
-                            let msg = chatMgr.messages[index]
-                            
-                            MessageView(message: msg)
-                                .animation(.easeIn)
-                                .transition(.move(edge: msg.fromCurrentUser ? .trailing : .leading))
+                    ScrollViewReader { proxy in
+                        
+                        LazyVStack {
+                            ForEach(chatMgr.messages.indices, id: \.self) { index in
+                                let msg = chatMgr.messages[index]
+                                
+                                MessageView(message: msg)
+                                    .id(index)
+                                    .animation(.easeIn)
+                                    .transition(.move(edge: msg.fromCurrentUser ? .trailing : .leading))
+                            }
                         }
+                        .onAppear(perform: {
+                            scrollProxy = proxy
+                        })
+                        
                     }
                 })
                 
@@ -71,8 +80,17 @@ struct ChatView: View {
                 //
             }
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
+        .modifier(HideNavigationView())
+        .onChange(of: chatMgr.keyboardIsShowing, perform: { value in
+            if value {
+                // scroll to the bottom to handle for the
+                // fact the keyboard is showing.
+                scrollToBottomOfChat()
+            }
+        })
+        .onChange(of: chatMgr.messages, perform: { _ in
+            scrollToBottomOfChat()
+        })
     }
     
     
@@ -80,10 +98,16 @@ struct ChatView: View {
         chatMgr.sendMessage(Message(content: typedMessage))
         typedMessage = ""
     }
+    
+    func scrollToBottomOfChat() {
+        withAnimation {
+            scrollProxy?.scrollTo(chatMgr.messages.count - 1, anchor: .bottom)
+        }
+    }
 }
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatView(person: Person.example)
+        ChatView(person: Person.example1)
     }
 }

@@ -23,7 +23,7 @@ struct MainView: View {
             return AnyView(view)
         
         case .message:
-            let view = Text("Message")
+            let view = MessageListView()
             return AnyView(view)
         
         case .profile:
@@ -33,42 +33,45 @@ struct MainView: View {
     }
     
     var body: some View {
-        ZStack {
-            Color(.systemGray6)
-                .opacity(0.35)
-                .edgesIgnoringSafeArea(.vertical)
-            
-            VStack {
-                HStack {
-                    Spacer()
+        NavigationView {
+            ZStack {
+                Color(.systemGray6)
+                    .opacity(0.35)
+                    .edgesIgnoringSafeArea(.vertical)
+                
+                VStack {
+                    HStack {
+                        Spacer()
+                        
+                        TabBarButtonView(type: .fire)
+                        
+                        Spacer()
+                        
+                        TabBarButtonView(type: .star)
+                        
+                        Spacer()
+                        
+                        TabBarButtonView(type: .message)
+                        
+                        Spacer()
+                        
+                        TabBarButtonView(type: .profile)
+                        
+                        Spacer()
+                    }
+                    .frame(height: 64)
+                    .padding(.top, 32)
                     
-                    TabBarButtonView(type: .fire)
-                    
-                    Spacer()
-                    
-                    TabBarButtonView(type: .star)
-                    
-                    Spacer()
-                    
-                    TabBarButtonView(type: .message)
-                    
-                    Spacer()
-                    
-                    TabBarButtonView(type: .profile) 
+                    // Call to load the relevant view based on the current value
+                    // of appState.selectedTab. The appState declared at the top
+                    // of the file is passed in from the App/ContentView.
+                    presentViewForState()
                     
                     Spacer()
                 }
-                .frame(height: 64)
-                .padding(.top, 32)
-                
-                // Call to load the relevant view based on the current value
-                // of appState.selectedTab. The appState declared at the top
-                // of the file is passed in from the App/ContentView.
-                presentViewForState()
-                
-                Spacer()
+                .edgesIgnoringSafeArea(.vertical)
             }
-            .edgesIgnoringSafeArea(.vertical)
+            .modifier(HideNavigationView())
         }
     }
 }

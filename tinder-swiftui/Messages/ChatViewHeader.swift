@@ -59,7 +59,7 @@ struct ChatViewHeader: View {
 
 struct ChatViewHeader_Previews: PreviewProvider {
     static var previews: some View {
-        let person = Person.example
+        let person = Person.example1
         
         ChatViewHeader(name: person.name,
                        imageUrl: person.imageUrls.first,

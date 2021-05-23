@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Message {
+struct Message: Hashable {
+
     var content: String
     var person: Person? = nil
     
@@ -18,5 +19,5 @@ struct Message {
 
 extension Message {
     static let exampleSent = Message(content: "Hi. I'm a sample sent message")
-    static let exampleReceived = Message(content: "Hi. I'm a sample received message", person: Person.example)
+    static let exampleReceived = Message(content: "Hi. I'm a sample received message", person: Person.example1)
 }
