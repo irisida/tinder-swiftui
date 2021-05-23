@@ -20,6 +20,13 @@
 		64A6FF3B265A60FF001ADC70 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF3A265A60FF001ADC70 /* RoundedImage.swift */; };
 		64A6FF45265A6330001ADC70 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 64A6FF44265A6330001ADC70 /* KingfisherSwiftUI */; };
 		64A6FF47265A77B0001ADC70 /* ProfileSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF46265A77B0001ADC70 /* ProfileSwipePromo.swift */; };
+		64A6FF49265A914E001ADC70 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF48265A914E001ADC70 /* Message.swift */; };
+		64A6FF4C265A923D001ADC70 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF4B265A923D001ADC70 /* Person.swift */; };
+		64A6FF4E265A932F001ADC70 /* MessagPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF4D265A932F001ADC70 /* MessagPreview.swift */; };
+		64A6FF50265A93F1001ADC70 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF4F265A93F1001ADC70 /* MessageView.swift */; };
+		64A6FF53265A979A001ADC70 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF52265A979A001ADC70 /* ChatView.swift */; };
+		64A6FF55265A97E6001ADC70 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF54265A97E6001ADC70 /* ChatManager.swift */; };
+		64A6FF57265A9FC8001ADC70 /* ChatViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF56265A9FC8001ADC70 /* ChatViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		64A6FF37265973A4001ADC70 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		64A6FF3A265A60FF001ADC70 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		64A6FF46265A77B0001ADC70 /* ProfileSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSwipePromo.swift; sourceTree = "<group>"; };
+		64A6FF48265A914E001ADC70 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		64A6FF4B265A923D001ADC70 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		64A6FF4D265A932F001ADC70 /* MessagPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagPreview.swift; sourceTree = "<group>"; };
+		64A6FF4F265A93F1001ADC70 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		64A6FF52265A979A001ADC70 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		64A6FF54265A97E6001ADC70 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		64A6FF56265A9FC8001ADC70 /* ChatViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +89,10 @@
 				64A6FF3126595EAD001ADC70 /* App */,
 				64A6FF3C265A6145001ADC70 /* Helpers */,
 				64A6FF3226596079001ADC70 /* Common */,
+				64A6FF4A265A9156001ADC70 /* Models */,
 				64A6FF2E26595BED001ADC70 /* TabBar */,
 				64A6FF39265973AC001ADC70 /* Profile */,
+				64A6FF51265A93F7001ADC70 /* Messages */,
 				64A6FF1A2659539D001ADC70 /* tinder_swiftuiApp.swift */,
 				64A6FF1E2659539E001ADC70 /* Assets.xcassets */,
 				64A6FF232659539E001ADC70 /* Info.plist */,
@@ -135,6 +151,27 @@
 				64A6FF35265972BA001ADC70 /* Colors.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		64A6FF4A265A9156001ADC70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF48265A914E001ADC70 /* Message.swift */,
+				64A6FF4B265A923D001ADC70 /* Person.swift */,
+				64A6FF4D265A932F001ADC70 /* MessagPreview.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64A6FF51265A93F7001ADC70 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF54265A97E6001ADC70 /* ChatManager.swift */,
+				64A6FF52265A979A001ADC70 /* ChatView.swift */,
+				64A6FF4F265A93F1001ADC70 /* MessageView.swift */,
+				64A6FF56265A9FC8001ADC70 /* ChatViewHeader.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,9 +255,16 @@
 				64A6FF47265A77B0001ADC70 /* ProfileSwipePromo.swift in Sources */,
 				64A6FF3B265A60FF001ADC70 /* RoundedImage.swift in Sources */,
 				64A6FF1D2659539D001ADC70 /* ContentView.swift in Sources */,
+				64A6FF57265A9FC8001ADC70 /* ChatViewHeader.swift in Sources */,
+				64A6FF4E265A932F001ADC70 /* MessagPreview.swift in Sources */,
+				64A6FF55265A97E6001ADC70 /* ChatManager.swift in Sources */,
+				64A6FF53265A979A001ADC70 /* ChatView.swift in Sources */,
+				64A6FF4C265A923D001ADC70 /* Person.swift in Sources */,
+				64A6FF49265A914E001ADC70 /* Message.swift in Sources */,
 				64A6FF36265972BA001ADC70 /* Colors.swift in Sources */,
 				64A6FF2B26595629001ADC70 /* MainView.swift in Sources */,
 				64A6FF1B2659539D001ADC70 /* tinder_swiftuiApp.swift in Sources */,
+				64A6FF50265A93F1001ADC70 /* MessageView.swift in Sources */,
 				64A6FF3026595D6A001ADC70 /* AppStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,4 +25,6 @@ extension Color {
     static let lightDropShadow = Color.gray.opacity(0.15)
     static let mediumDropShadow = Color.gray.opacity(0.50)
     static let darkerDropShadow = Color.gray.opacity(0.65)
+    
+    static let textFieldBackground = Color(.systemGray6)
 }
