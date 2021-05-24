@@ -10,15 +10,17 @@ import SwiftUI
 struct ContentView: View {
     
     // Largely transient file that simply instantiates the
-    // manager for our state and calls the MainView which
-    // presents our app TabBar and passes the mgr as an env
-    // object which will be used to control tabbar switching
-    // and UI views responding
+    // managers for our state and users. Calls the MainView
+    // which presents our app TabBar and passes the mgr as
+    // an env object which will be used to control tabBar
+    // switching and UI views responding
     @ObservedObject var mgr: AppStateManager = AppStateManager()
+    @ObservedObject var userMgr: UserManager = UserManager()
     
     var body: some View {
         MainView()
             .environmentObject(mgr)
+            .environmentObject(userMgr)
     }
 }
 

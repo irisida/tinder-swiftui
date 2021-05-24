@@ -30,6 +30,9 @@
 		64A6FF59265AE43A001ADC70 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF58265AE43A001ADC70 /* MessageListView.swift */; };
 		64A6FF5B265AE48A001ADC70 /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF5A265AE48A001ADC70 /* MessageListViewModel.swift */; };
 		64A6FF5D265AEB58001ADC70 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF5C265AEB58001ADC70 /* MessageRowView.swift */; };
+		64A6FF5F265B9C3B001ADC70 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF5E265B9C3B001ADC70 /* UserManager.swift */; };
+		64A6FF61265B9CA5001ADC70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF60265B9CA5001ADC70 /* User.swift */; };
+		64A6FF64265BA06B001ADC70 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF63265BA06B001ADC70 /* LikesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		64A6FF58265AE43A001ADC70 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		64A6FF5A265AE48A001ADC70 /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
 		64A6FF5C265AEB58001ADC70 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		64A6FF5E265B9C3B001ADC70 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		64A6FF60265B9CA5001ADC70 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		64A6FF63265BA06B001ADC70 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,7 @@
 				64A6FF2E26595BED001ADC70 /* TabBar */,
 				64A6FF39265973AC001ADC70 /* Profile */,
 				64A6FF51265A93F7001ADC70 /* Messages */,
-				64A6FF1A2659539D001ADC70 /* tinder_swiftuiApp.swift */,
+				64A6FF62265BA053001ADC70 /* Matches */,
 				64A6FF1E2659539E001ADC70 /* Assets.xcassets */,
 				64A6FF232659539E001ADC70 /* Info.plist */,
 				64A6FF202659539E001ADC70 /* Preview Content */,
@@ -127,8 +133,10 @@
 		64A6FF3126595EAD001ADC70 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				64A6FF1A2659539D001ADC70 /* tinder_swiftuiApp.swift */,
 				64A6FF2F26595D6A001ADC70 /* AppStateManager.swift */,
 				64A6FF1C2659539D001ADC70 /* ContentView.swift */,
+				64A6FF5E265B9C3B001ADC70 /* UserManager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 				64A6FF48265A914E001ADC70 /* Message.swift */,
 				64A6FF4B265A923D001ADC70 /* Person.swift */,
 				64A6FF4D265A932F001ADC70 /* MessagPreview.swift */,
+				64A6FF60265B9CA5001ADC70 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +190,14 @@
 				64A6FF5C265AEB58001ADC70 /* MessageRowView.swift */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		64A6FF62265BA053001ADC70 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF63265BA06B001ADC70 /* LikesView.swift */,
+			);
+			path = Matches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +284,12 @@
 				64A6FF1D2659539D001ADC70 /* ContentView.swift in Sources */,
 				64A6FF57265A9FC8001ADC70 /* ChatViewHeader.swift in Sources */,
 				64A6FF4E265A932F001ADC70 /* MessagPreview.swift in Sources */,
+				64A6FF5F265B9C3B001ADC70 /* UserManager.swift in Sources */,
+				64A6FF61265B9CA5001ADC70 /* User.swift in Sources */,
 				64A6FF55265A97E6001ADC70 /* ChatManager.swift in Sources */,
 				64A6FF53265A979A001ADC70 /* ChatView.swift in Sources */,
 				64A6FF5D265AEB58001ADC70 /* MessageRowView.swift in Sources */,
+				64A6FF64265BA06B001ADC70 /* LikesView.swift in Sources */,
 				64A6FF4C265A923D001ADC70 /* Person.swift in Sources */,
 				64A6FF49265A914E001ADC70 /* Message.swift in Sources */,
 				64A6FF36265972BA001ADC70 /* Colors.swift in Sources */,

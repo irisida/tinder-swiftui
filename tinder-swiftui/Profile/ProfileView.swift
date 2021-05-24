@@ -34,13 +34,13 @@ struct ProfileView: View {
                 
                 Spacer().frame(height: 24)
                 
-                Text("Ed, 30")
+                Text("Ed, 312")
                     .foregroundColor(.textTitle)
                     .font(.system(size: 26, weight: .medium))
                 
                 Spacer().frame(height: 8)
                 
-                Text("Software Engineer")
+                Text("Toilet roll Quality Assurance")
                     .foregroundColor(.textTitle)
                 
                 Spacer().frame(height: 16)
