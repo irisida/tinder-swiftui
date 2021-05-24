@@ -33,6 +33,9 @@
 		64A6FF5F265B9C3B001ADC70 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF5E265B9C3B001ADC70 /* UserManager.swift */; };
 		64A6FF61265B9CA5001ADC70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF60265B9CA5001ADC70 /* User.swift */; };
 		64A6FF64265BA06B001ADC70 /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF63265BA06B001ADC70 /* LikesView.swift */; };
+		64A6FF66265BA56C001ADC70 /* PersonSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF65265BA56C001ADC70 /* PersonSquare.swift */; };
+		64A6FF68265BB3CF001ADC70 /* TopPicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF67265BB3CF001ADC70 /* TopPicksView.swift */; };
+		64A6FF6A265BB5E1001ADC70 /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF69265BB5E1001ADC70 /* MatchesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		64A6FF5E265B9C3B001ADC70 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		64A6FF60265B9CA5001ADC70 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		64A6FF63265BA06B001ADC70 /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
+		64A6FF65265BA56C001ADC70 /* PersonSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSquare.swift; sourceTree = "<group>"; };
+		64A6FF67265BB3CF001ADC70 /* TopPicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPicksView.swift; sourceTree = "<group>"; };
+		64A6FF69265BB5E1001ADC70 /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +201,10 @@
 		64A6FF62265BA053001ADC70 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
+				64A6FF69265BB5E1001ADC70 /* MatchesView.swift */,
+				64A6FF65265BA56C001ADC70 /* PersonSquare.swift */,
 				64A6FF63265BA06B001ADC70 /* LikesView.swift */,
+				64A6FF67265BB3CF001ADC70 /* TopPicksView.swift */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -277,9 +286,11 @@
 			files = (
 				64A6FF38265973A4001ADC70 /* ProfileView.swift in Sources */,
 				64A6FF2D2659584C001ADC70 /* TabBarButtonView.swift in Sources */,
+				64A6FF6A265BB5E1001ADC70 /* MatchesView.swift in Sources */,
 				64A6FF3426596085001ADC70 /* Extensions.swift in Sources */,
 				64A6FF47265A77B0001ADC70 /* ProfileSwipePromo.swift in Sources */,
 				64A6FF59265AE43A001ADC70 /* MessageListView.swift in Sources */,
+				64A6FF68265BB3CF001ADC70 /* TopPicksView.swift in Sources */,
 				64A6FF3B265A60FF001ADC70 /* RoundedImage.swift in Sources */,
 				64A6FF1D2659539D001ADC70 /* ContentView.swift in Sources */,
 				64A6FF57265A9FC8001ADC70 /* ChatViewHeader.swift in Sources */,
@@ -288,6 +299,7 @@
 				64A6FF61265B9CA5001ADC70 /* User.swift in Sources */,
 				64A6FF55265A97E6001ADC70 /* ChatManager.swift in Sources */,
 				64A6FF53265A979A001ADC70 /* ChatView.swift in Sources */,
+				64A6FF66265BA56C001ADC70 /* PersonSquare.swift in Sources */,
 				64A6FF5D265AEB58001ADC70 /* MessageRowView.swift in Sources */,
 				64A6FF64265BA06B001ADC70 /* LikesView.swift in Sources */,
 				64A6FF4C265A923D001ADC70 /* Person.swift in Sources */,
