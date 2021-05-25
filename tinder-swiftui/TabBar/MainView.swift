@@ -15,7 +15,7 @@ struct MainView: View {
         switch appState.selectedTab {
         
         case .fire:
-            let view = Text("Fire")
+            let view = HomeView()
             return AnyView(view)
             
         case .star:

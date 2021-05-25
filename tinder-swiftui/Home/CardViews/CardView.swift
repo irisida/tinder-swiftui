@@ -14,16 +14,21 @@ struct CardView: View {
     
     let screenCutOff = (UIScreen.main.bounds.width / 2) * 0.8
     
+    @Namespace var imageNamespace
+    
     var body: some View {
         GeometryReader { geo in
             if fullScreenMode {
                 FullScreenCardView(person: person,
-                                   fullScreenMode: $fullScreenMode)
+                                   fullScreenMode: $fullScreenMode,
+                                   nameSpace: imageNamespace)
+                    .animation(.easeOut(duration: 0.3))
             } else {
                 CardImageScroller(person: person, fullScreenMode: $fullScreenMode)
-                    .animation(.easeOut(duration: 0.2))
+                    .animation(.easeOut(duration: 0.3))
                     .frame(width: geo.size.width - 24, height: geo.size.height)
                     .padding(.leading, 12)
+                    .matchedGeometryEffect(id: "image\(person.id)", in: imageNamespace)
                     .offset(x: person.x, y: person.y)
                     .rotationEffect(.degrees(person.degree))
                     .gesture(
@@ -41,7 +46,7 @@ struct CardView: View {
                             .onEnded({ value in
                                 withAnimation(.interpolatingSpring(mass: 1.0, stiffness: 50, damping: 10, initialVelocity: 0)) {
                                     let width = value.translation.width
-                                 
+                                    
                                     // set the 4 possibilities for:
                                     
                                     // snapback from left

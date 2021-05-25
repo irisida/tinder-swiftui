@@ -16,12 +16,17 @@ struct FullScreenCardView: View {
     
     @EnvironmentObject var userMgr: UserManager
     
+    var nameSpace: Namespace.ID
+    
     var body: some View {
         ZStack(alignment: .bottom) {
+            Color.white.edgesIgnoringSafeArea(.all)
+            
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
                     CardImageScroller(person: person, fullScreenMode: $fullScreenMode)
-                        .frame(width: screen.width, height: screen.height * 0.6)
+                        .frame(width: screen.width, height: screen.height * 0.7)
+                        .matchedGeometryEffect(id: "image\(person.id)", in: nameSpace)
                     
                     HStack {
                         VStack(alignment: .leading) {
@@ -42,7 +47,9 @@ struct FullScreenCardView: View {
                         }
                         .padding([.horizontal, .top], 16)
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {
+                            fullScreenMode = false
+                        }, label: {
                             Image(systemName: "arrow.down.circle.fill")
                                 .font(.system(size: 42))
                                 .background(Color.white)
@@ -114,7 +121,7 @@ struct FullScreenCardView: View {
                 
                 Spacer()
             }
-            .padding(.vertical, 32)
+            .padding(.vertical, 24)
             .edgesIgnoringSafeArea(.bottom)
             .background(
                 LinearGradient(
@@ -135,7 +142,8 @@ struct FullScreenCardView: View {
 }
 
 struct FullScreenCardView_Previews: PreviewProvider {
+    @Namespace static var placeholderNamespace
     static var previews: some View {
-        FullScreenCardView(person: Person.example3, fullScreenMode: .constant(true))
+        FullScreenCardView(person: Person.example3, fullScreenMode: .constant(true), nameSpace: placeholderNamespace)
     }
 }

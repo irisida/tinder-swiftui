@@ -26,7 +26,7 @@ class UserManager: ObservableObject {
     }
     
     private func loadCardPeople() {
-        self.matches = Person.examples.shuffled()
+        self.cardPeople = Person.topPicksExamples.shuffled()
     }
     
     private func loadUser() {
