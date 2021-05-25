@@ -12,6 +12,9 @@ extension Color {
     static let activeTabGray = Color("active_tab_gray")
     
     // text handlers to take the edge of stark black
+    static let lightNotWhite = Color(.systemGray6).opacity(0.90)
+    static let lightSmallprint = Color(.systemGray6).opacity(0.60)
+    
     static let darkNotBlack = Color.black.opacity(0.65)
     static let textPrimary = Color.gray.opacity(0.9)
     static let textSecondary = Color.gray.opacity(0.6)

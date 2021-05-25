@@ -70,6 +70,15 @@ struct MainView: View {
                     Spacer()
                 }
                 .edgesIgnoringSafeArea(.vertical)
+                
+                // check if we're shoeing the purchasing popup or not
+                if appState.showPurchasePopup {
+                    PurchasePopup(isVisible: $appState.showPurchasePopup)
+                        .animation(.spring(response: 0.50,
+                                           dampingFraction: 0.65,
+                                           blendDuration: 0.1))
+                        .transition(.offset(y: 800))
+                }
             }
             .modifier(HideNavigationView())
         }

@@ -36,6 +36,12 @@
 		64A6FF66265BA56C001ADC70 /* PersonSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF65265BA56C001ADC70 /* PersonSquare.swift */; };
 		64A6FF68265BB3CF001ADC70 /* TopPicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF67265BB3CF001ADC70 /* TopPicksView.swift */; };
 		64A6FF6A265BB5E1001ADC70 /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF69265BB5E1001ADC70 /* MatchesView.swift */; };
+		64A6FF6D265BE4C8001ADC70 /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF6C265BE4C8001ADC70 /* PurchasePopup.swift */; };
+		64A6FF6F265BF1BA001ADC70 /* PurchaseSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF6E265BF1BA001ADC70 /* PurchaseSwipePromo.swift */; };
+		64A6FF72265C300A001ADC70 /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF71265C300A001ADC70 /* PurchaseOptionView.swift */; };
+		64A6FF74265C3063001ADC70 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF73265C3063001ADC70 /* Subscription.swift */; };
+		64A6FF76265C5A15001ADC70 /* CardImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF75265C5A15001ADC70 /* CardImageScroller.swift */; };
+		64A6FF7A265CF20D001ADC70 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF79265CF20D001ADC70 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,12 @@
 		64A6FF65265BA56C001ADC70 /* PersonSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSquare.swift; sourceTree = "<group>"; };
 		64A6FF67265BB3CF001ADC70 /* TopPicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPicksView.swift; sourceTree = "<group>"; };
 		64A6FF69265BB5E1001ADC70 /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
+		64A6FF6C265BE4C8001ADC70 /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
+		64A6FF6E265BF1BA001ADC70 /* PurchaseSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSwipePromo.swift; sourceTree = "<group>"; };
+		64A6FF71265C300A001ADC70 /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
+		64A6FF73265C3063001ADC70 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		64A6FF75265C5A15001ADC70 /* CardImageScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageScroller.swift; sourceTree = "<group>"; };
+		64A6FF79265CF20D001ADC70 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +120,12 @@
 				64A6FF3C265A6145001ADC70 /* Helpers */,
 				64A6FF3226596079001ADC70 /* Common */,
 				64A6FF4A265A9156001ADC70 /* Models */,
+				64A6FF6B265BE4A5001ADC70 /* Popups */,
 				64A6FF2E26595BED001ADC70 /* TabBar */,
-				64A6FF39265973AC001ADC70 /* Profile */,
-				64A6FF51265A93F7001ADC70 /* Messages */,
+				64A6FF78265C5A5A001ADC70 /* Home */,
 				64A6FF62265BA053001ADC70 /* Matches */,
+				64A6FF51265A93F7001ADC70 /* Messages */,
+				64A6FF39265973AC001ADC70 /* Profile */,
 				64A6FF1E2659539E001ADC70 /* Assets.xcassets */,
 				64A6FF232659539E001ADC70 /* Info.plist */,
 				64A6FF202659539E001ADC70 /* Preview Content */,
@@ -180,6 +194,7 @@
 				64A6FF4B265A923D001ADC70 /* Person.swift */,
 				64A6FF4D265A932F001ADC70 /* MessagPreview.swift */,
 				64A6FF60265B9CA5001ADC70 /* User.swift */,
+				64A6FF73265C3063001ADC70 /* Subscription.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +222,41 @@
 				64A6FF67265BB3CF001ADC70 /* TopPicksView.swift */,
 			);
 			path = Matches;
+			sourceTree = "<group>";
+		};
+		64A6FF6B265BE4A5001ADC70 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF70265BF475001ADC70 /* Purchase */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		64A6FF70265BF475001ADC70 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF6C265BE4C8001ADC70 /* PurchasePopup.swift */,
+				64A6FF6E265BF1BA001ADC70 /* PurchaseSwipePromo.swift */,
+				64A6FF71265C300A001ADC70 /* PurchaseOptionView.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		64A6FF77265C5A21001ADC70 /* CardViews */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF75265C5A15001ADC70 /* CardImageScroller.swift */,
+				64A6FF79265CF20D001ADC70 /* CardView.swift */,
+			);
+			path = CardViews;
+			sourceTree = "<group>";
+		};
+		64A6FF78265C5A5A001ADC70 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64A6FF77265C5A21001ADC70 /* CardViews */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,24 +341,30 @@
 				64A6FF47265A77B0001ADC70 /* ProfileSwipePromo.swift in Sources */,
 				64A6FF59265AE43A001ADC70 /* MessageListView.swift in Sources */,
 				64A6FF68265BB3CF001ADC70 /* TopPicksView.swift in Sources */,
+				64A6FF72265C300A001ADC70 /* PurchaseOptionView.swift in Sources */,
 				64A6FF3B265A60FF001ADC70 /* RoundedImage.swift in Sources */,
 				64A6FF1D2659539D001ADC70 /* ContentView.swift in Sources */,
 				64A6FF57265A9FC8001ADC70 /* ChatViewHeader.swift in Sources */,
 				64A6FF4E265A932F001ADC70 /* MessagPreview.swift in Sources */,
+				64A6FF6F265BF1BA001ADC70 /* PurchaseSwipePromo.swift in Sources */,
 				64A6FF5F265B9C3B001ADC70 /* UserManager.swift in Sources */,
+				64A6FF6D265BE4C8001ADC70 /* PurchasePopup.swift in Sources */,
 				64A6FF61265B9CA5001ADC70 /* User.swift in Sources */,
 				64A6FF55265A97E6001ADC70 /* ChatManager.swift in Sources */,
 				64A6FF53265A979A001ADC70 /* ChatView.swift in Sources */,
 				64A6FF66265BA56C001ADC70 /* PersonSquare.swift in Sources */,
 				64A6FF5D265AEB58001ADC70 /* MessageRowView.swift in Sources */,
+				64A6FF76265C5A15001ADC70 /* CardImageScroller.swift in Sources */,
 				64A6FF64265BA06B001ADC70 /* LikesView.swift in Sources */,
 				64A6FF4C265A923D001ADC70 /* Person.swift in Sources */,
 				64A6FF49265A914E001ADC70 /* Message.swift in Sources */,
 				64A6FF36265972BA001ADC70 /* Colors.swift in Sources */,
+				64A6FF74265C3063001ADC70 /* Subscription.swift in Sources */,
 				64A6FF2B26595629001ADC70 /* MainView.swift in Sources */,
 				64A6FF1B2659539D001ADC70 /* tinder_swiftuiApp.swift in Sources */,
 				64A6FF50265A93F1001ADC70 /* MessageView.swift in Sources */,
 				64A6FF3026595D6A001ADC70 /* AppStateManager.swift in Sources */,
+				64A6FF7A265CF20D001ADC70 /* CardView.swift in Sources */,
 				64A6FF5B265AE48A001ADC70 /* MessageListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
