@@ -42,6 +42,8 @@
 		64A6FF74265C3063001ADC70 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF73265C3063001ADC70 /* Subscription.swift */; };
 		64A6FF76265C5A15001ADC70 /* CardImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF75265C5A15001ADC70 /* CardImageScroller.swift */; };
 		64A6FF7A265CF20D001ADC70 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF79265CF20D001ADC70 /* CardView.swift */; };
+		64A6FF7C265D014C001ADC70 /* FullScreenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF7B265D014B001ADC70 /* FullScreenCardView.swift */; };
+		64A6FF7E265D0ABE001ADC70 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6FF7D265D0ABE001ADC70 /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		64A6FF73265C3063001ADC70 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		64A6FF75265C5A15001ADC70 /* CardImageScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageScroller.swift; sourceTree = "<group>"; };
 		64A6FF79265CF20D001ADC70 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		64A6FF7B265D014B001ADC70 /* FullScreenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCardView.swift; sourceTree = "<group>"; };
+		64A6FF7D265D0ABE001ADC70 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				64A6FF3A265A60FF001ADC70 /* RoundedImage.swift */,
+				64A6FF7D265D0ABE001ADC70 /* CircleButtonView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			children = (
 				64A6FF75265C5A15001ADC70 /* CardImageScroller.swift */,
 				64A6FF79265CF20D001ADC70 /* CardView.swift */,
+				64A6FF7B265D014B001ADC70 /* FullScreenCardView.swift */,
 			);
 			path = CardViews;
 			sourceTree = "<group>";
@@ -334,9 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A6FF7C265D014C001ADC70 /* FullScreenCardView.swift in Sources */,
 				64A6FF38265973A4001ADC70 /* ProfileView.swift in Sources */,
 				64A6FF2D2659584C001ADC70 /* TabBarButtonView.swift in Sources */,
 				64A6FF6A265BB5E1001ADC70 /* MatchesView.swift in Sources */,
+				64A6FF7E265D0ABE001ADC70 /* CircleButtonView.swift in Sources */,
 				64A6FF3426596085001ADC70 /* Extensions.swift in Sources */,
 				64A6FF47265A77B0001ADC70 /* ProfileSwipePromo.swift in Sources */,
 				64A6FF59265AE43A001ADC70 /* MessageListView.swift in Sources */,
